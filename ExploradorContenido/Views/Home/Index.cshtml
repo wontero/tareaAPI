@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Explorador de contenido aleatorio";
+}
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <section class="col" id="seccion-cita">
+        <div class="card h-100 shadow-sm">
+            <h2 class="card-header h5">Citas y autores</h2>
+            <div class="card-body zona zona-texto">
+                <p class="estado"></p>
+                <blockquote class="contenido blockquote mb-0" hidden>
+                    <p id="texto-cita"></p>
+                    <footer class="blockquote-footer mt-2" id="autor-cita"></footer>
+                </blockquote>
+            </div>
+            <div class="card-footer bg-white">
+                <button type="button" class="btn btn-primary w-100" id="boton-cita">Obtener otra cita</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="col" id="seccion-perro">
+        <div class="card h-100 shadow-sm">
+            <h2 class="card-header h5">Imágenes de perros</h2>
+            <div class="card-body zona zona-imagen">
+                <p class="estado"></p>
+                <img class="contenido imagen-aleatoria" id="imagen-perro" alt="Foto aleatoria de un perro" hidden />
+            </div>
+            <div class="card-footer bg-white">
+                <button type="button" class="btn btn-primary w-100" id="boton-perro">Mostrar otro perro</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="col" id="seccion-gato">
+        <div class="card h-100 shadow-sm">
+            <h2 class="card-header h5">Imágenes de gatos</h2>
+            <div class="card-body zona zona-imagen">
+                <p class="estado"></p>
+                <img class="contenido imagen-aleatoria" id="imagen-gato" alt="Foto aleatoria de un gato" hidden />
+            </div>
+            <div class="card-footer bg-white">
+                <button type="button" class="btn btn-primary w-100" id="boton-gato">Mostrar otro gato</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="col" id="seccion-dato">
+        <div class="card h-100 shadow-sm">
+            <h2 class="card-header h5">Datos curiosos</h2>
+            <div class="card-body zona zona-texto">
+                <p class="estado"></p>
+                <p class="contenido mb-0" id="texto-dato" hidden></p>
+            </div>
+            <div class="card-footer bg-white">
+                <button type="button" class="btn btn-primary w-100" id="boton-dato">Mostrar otro dato</button>
+            </div>
+        </div>
+    </section>
+</div>
